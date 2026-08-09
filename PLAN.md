@@ -16,7 +16,7 @@
 - [ ] **FASE 4: Sviluppo Core del Nuovo Addon (In corso)**
   - [x] Creare la struttura base del nuovo addon (`addon.xml`, icon, fanart, etc.).
   - [ ] Implementare/Adattare la logica di base (ricerca, scraping, riproduzione).
-  - [ ] Implementare il database/tracciamento del "Continua a Guardare".
+  - [x] Implementare il database/tracciamento del "Continua a Guardare".
   - [ ] Implementare la gestione del resume point in riproduzione intercettando `xbmc.Player()`.
 
 - [ ] **FASE 5: Sviluppo UI e Integrazione**
