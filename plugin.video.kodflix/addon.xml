@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kodflix" name="KodFlix" version="1.0.0" provider-name="Stebs04">
+    <requires>
+        <!-- Richiede Kodi 19 Matrix o superiore (Python 3) -->
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="it">KodFlix - Addon personale</summary>
+        <description lang="it">Addon custom per Film e Serie TV costruito da zero con sistema Continua a Guardare.</description>
+        <platform>all</platform>
+        <assets>
+          <icon>resources/media/icon.png</icon>
+          <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
