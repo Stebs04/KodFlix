@@ -15,11 +15,12 @@
 
 - [ ] **FASE 4: Sviluppo Core del Nuovo Addon (In corso)**
   - [x] Creare la struttura base del nuovo addon (`addon.xml`, icon, fanart, etc.).
-  - [ ] Implementare/Adattare la logica di base (ricerca, scraping, riproduzione).
-  - [x] Implementare il database/tracciamento del "Continua a Guardare".
-  - [ ] Implementare la gestione del resume point in riproduzione intercettando `xbmc.Player()`.
+  - [x] Implementare il database/tracciamento del "Continua a Guardare" (`core/database.py`).
+  - [x] Progettare e implementare il modulo Player (`core/player.py`) per monitorare `xbmc.Player()` e calcolare i resume points.
+  - [x] Integrare il Player e la vista "Continua a guardare" in `default.py`.
+  - [ ] Implementare/Adattare la logica di base (ricerca, scraping, selezione sorgenti).
 
 - [ ] **FASE 5: Sviluppo UI e Integrazione**
-  - [ ] Creare la sezione / menu "Continua a guardare" nell'interfaccia dell'addon.
+  - [x] Creare la sezione / menu "Continua a guardare" nell'interfaccia dell'addon.
   - [ ] (Opzionale) Esportazione verso i widget della Home di Kodi.
   - [ ] Testing finale e debug.

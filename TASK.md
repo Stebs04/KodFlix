@@ -26,3 +26,9 @@ In base all'analisi del progetto originale, ecco come implementeremo questa funz
 - Al completamento di un episodio (quando `getTime() > 90%` di `getTotalTime()`), si contrassegna l'episodio come Visto e **si inserisce nella tabella l'episodio successivo** per quella serie, includendo metadati completi (tmdb_id, stagione, episodio, titolo, poster, timestamp di ultimo aggiornamento).
 - Se la visione viene interrotta a metà (es. al 50%), il record si aggiornerà per riproporre l'episodio corrente con il relativo *Resume Time*.
 - Verrà creato un menu dedicato (`channel`) nell'addon chiamato **"Continua a guardare"** che preleverà gli elementi da questo DB custom, ordinandoli per data, e generando un elenco `ListItem` che potremo eventualmente collegare ai widget della Home di Kodi.
+
+## Stato di Avanzamento
+- [x] Database SQLite implementato (`plugin.video.kodflix/core/database.py`).
+- [x] Player personalizzato implementato (`plugin.video.kodflix/core/player.py`) con loop di monitoraggio non-bloccante (`xbmc.Monitor`) e logica di completamento/avanzamento episodio.
+- [x] Interfaccia "Continua a Guardare" e routing integrati in `plugin.video.kodflix/default.py`.
+- [ ] Ricerca/Scraping: integrazione logica di scraping e player effettivo con flusso video (prossimo task).
